@@ -1,0 +1,105 @@
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+body {
+  font-family: 'Exo 2', sans-serif;
+  background-image: url('./img/table.png');
+  background-position: top;
+  background-blend-mode: multiply;
+  background-color: rgba(0, 0, 0, 0.288);
+  background-size: 100vh;
+}
+
+button {
+  background-color: yellow;
+  border: none;
+  padding: 1em 1.25em;
+  font-weight: bold;
+  font-size: 1.25rem;
+  transform: scale(1);
+  transition: background-color 0.2s, color 0.2s;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+button:hover,
+button:focus {
+  background-color: rgb(28, 28, 104);
+  border: none;
+  padding: 1em 1.25em;
+  font-weight: bold;
+  cursor: pointer;
+  color: white;
+}
+
+p {
+  color: white;
+  font-size: 1.25rem;
+  margin-left: 1em;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  font-size: 1.125rem;
+}
+
+a {
+  color: orange;
+  font-weight: bold;
+}
+
+a:hover,
+a:focus {
+  color: aqua;
+}
+
+.top {
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+#header,
+#score-player,
+#score-com {
+  text-align: center;
+  color: white;
+}
+
+#cards {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-slot + .card-slot {
+  margin-top: 6em;
+}
+
+.card-slot {
+  border: 1px solid black;
+  border-radius: 10px;
+  height: 297px;
+  width: calc(300px * 5 / 7);
+}
+
+#draw {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+#draw:disabled {
+  cursor: not-allowed;
+  background-color: black;
+}
